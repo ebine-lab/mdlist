@@ -649,7 +649,7 @@ AUDIT サブエージェントは生成物の文脈からタスク種別を自�
 | Git・ワークフロー操作 | git-workflow.md, testing-strategy.md |
 | フィードバック作成 | feedback-template.md |
 | 議事録作成 | minutes-prompt.md |
-| 会話応答（一般） | AUDIT.md + CLAUDE.md の TIER 1–4 のみ（追加ロードなし） |
+| 会話応答（一般） | AUDIT.md + GENERAL.md の TIER 1–4 のみ（追加ロードなし） |
 
 #### 判定ルール
 
@@ -735,7 +735,8 @@ AUDIT サブエージェントの実装方式は実行環境に依存する。�
 |:---|:---|:---|
 | **claude.ai チャット** | Artifact 内 API 呼び出しによる擬似サブエージェント | API リクエストの system prompt に該当ドキュメントを含める |
 | **Cowork** | claude.ai と同一（要検証） | 同上（Cowork での API 呼び出し可否は未確認） |
-| **Claude Code** | Agent SDK ネイティブサブエージェント | Filesystem 経由で仕様ドキュメントをサブエージェントのコンテキストにロード |
+| **Claude Code CLI（ローカルシェル／Desktop）** | Agent SDK ネイティブサブエージェント | Filesystem 経由で仕様ドキュメントをサブエージェントのコンテキストにロード |
+| **Claude Code web（claude.ai/code）** | Agent SDK ネイティブサブエージェント（Linux サンドボックス、セッション短命） | 作業リポジトリ root `CLAUDE.md` は自動、`doc/GENERAL.md`・`doc/AUDIT.md` は `Read` で明示ロード、`doc/rules/*` はオンデマンド |
 
 ### 16.1 環境共通の保証事項
 

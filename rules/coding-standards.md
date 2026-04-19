@@ -1432,7 +1432,7 @@ export default {
 **採用基準**
 - Josh W. Comeau's Modern CSS Reset（2025/12/27のブログ記事）を業界標準として参照
 - CSS Level 3およびLevel 4の最新機能を網羅
-- 既存CLAUDE.md規約（line-height: 1.5, font: inherit）との整合性確認済み
+- 既存 GENERAL.md 規約（line-height: 1.5, font: inherit）との整合性確認済み
 
 #### 基本のリセット項目
 

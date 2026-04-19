@@ -584,7 +584,7 @@ CSS と `defer`/`async` なしの JavaScript はレンダリングブロック�
 
 ### JavaScript の最適化
 
-CLAUDE.md 規約により、全 `<script>` タグは `<head>` 内に記載し、`defer` または `async` を必須とする。
+GENERAL.md 規約により、全 `<script>` タグは `<head>` 内に記載し、`defer` または `async` を必須とする。
 
 | 属性 | 実行タイミング | 実行順序 | 適用場面 |
 |---|---|---|---|
